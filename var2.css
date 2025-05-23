@@ -1,0 +1,22 @@
+:root {
+  --background-color-service-item: #000000;
+  --button-background-color: #bca2ff;
+  --button-hover-background-color: #dbbeff;
+  --button-text-color: #ffffff;
+  --font-base-size: 1.618rem;
+  --footer-background-color: #000000;
+  --mane-background-color: #000000;
+  --mane-text-color: #ffffff;
+  --navbar-background-color: #000000;
+  --navbar-transparent-background-color: rgba(0, 0, 0, 0.45);
+  --navbar-height: 3.8rem;
+  --purchase-text-color: #ffffff;
+  --text-color: #c1c1c1;
+  --text-color-hover: #ffffff;
+  --logo-text-color: #ffffff;
+}
+/* purchase collor #9E1816 */
+/* promo text collor #D9AB60 */
+/* text collor #23150E */
+/* background collor #FFF9EB */
+/*#e30b5d*/

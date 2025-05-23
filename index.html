@@ -1,0 +1,116 @@
+<!--add more pages + enable scrolling through them
+TODO:  
+    add the content to the footer
+    improve the navbar(make it transparent when scrolling down)
+    responsive design
+
+ FIXME: 
+   TRANSPARENCY OF THE NAVBAR IS NOT WORKING PROPERLY
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlekCuts</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#flekcuts" id="home">FlekCuts</a></li>
+        <li><a href="#objednat" class="button">objednat</a></li>
+        <li><a href="#services" class="button">služby</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="flekcuts" class="page-section">
+        <aside class="promo">
+          <h1>
+            Zase to přerostlo? <br />
+            <button onclick="location.href='#objednat'" id="purchase">
+              Objednej se
+            </button>
+          </h1>
+        </aside>
+      </section>
+      <section id="services" class="page-section">
+        <h2 id="sluzby-subheading">Služby</h2>
+        <div class="services-container">
+          <div class="service-item">
+            <h3>Fade</h3>
+            <p>Jakýkoliv střih od kůže, vrch nůžkami</p>
+          </div>
+          <div class="service-item">
+            <h3>Klasikcký střih</h3>
+            <p>Klasický střih do ztracena, vrch nůžkami</p>
+          </div>
+          <div class="service-item">
+            <h3>Dětský střih</h3>
+            <p>Děti do 10 let, do ztracena</p>
+          </div>
+          <div class="service-item">
+            <h3>Vousy</h3>
+            <p>Úprava vousů pomocí konturovacího strojku a břitvy</p>
+          </div>
+          <div class="service-item">
+            <h3>Kompletka</h3>
+            <p>Střih dle výběru, úprava vousů, obočí a mytí vlasů</p>
+          </div>
+          <div class="service-item">
+            <h3>Mytí vlasů</h3>
+            <p>mytí vlasů - kondicionér + šampón</p>
+          </div>
+        </div>
+      </section>
+      <section id="objednat" class="page-section">
+        <h2 id="objednani-subheading">Objednání</h2>
+        <form action="../backend/book.php" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="input-bookin"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="input-bookin"
+          />
+          <input
+            type="date"
+            name="date"
+            placeholder="Date"
+            required
+            class="input-bookin"
+          />
+          <input
+            type="time"
+            name="time"
+            placeholder="Time"
+            required
+            class="input-bookin"
+          />
+          <button type="submit" class="button-bookin">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2>footer</h2>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
