@@ -262,6 +262,10 @@ h2 {
     font-size: var(--font-base-size);
   }
 
+  #objednani-subheading {
+    font-size: var(--font-base-size);
+  }
+
   #services {
     margin: 0 0rem;
   }
