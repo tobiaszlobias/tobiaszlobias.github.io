@@ -109,10 +109,7 @@ html {
   scroll-snap-align: start;
   scroll-margin-top: px;
 }
-#objednani-subheading {
-  font-size: calc(var(--font-base-size) * 2);
-  color: var(--mane-text-color);
-}
+
 #sluzby-subheading {
   font-size: calc(var(--font-base-size) * 2);
   color: var(--mane-text-color);
@@ -259,10 +256,6 @@ h2 {
   }
 
   #sluzby-subheading {
-    font-size: var(--font-base-size);
-  }
-
-  #objednani-subheading {
     font-size: var(--font-base-size);
   }
 
